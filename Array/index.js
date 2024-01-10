@@ -77,33 +77,57 @@ const newArr = ex.map((fn));
 //write a javaScript function that return a string that has letters in alphabetical order.
 //example strng;"webmaster"
 
+//write a java script function that accept   a string as a parameter
+//and convert the first letter of each world into upper case
+//example string :'the quick the brown fox
+ 
+
+
+
 //write js function that return true if the value is palindrome else false?
 //for Eg; mom(true)
 //egtest
 //palindrome(121)true
 //palindrome(-10)false
 //palindrome(10)false
+function ispalindrome(num){
+    let numstr = num.toString();
+    let rev = numstr.split("").reverse().join();
+    if(rev === numStr){
+        return true;
+    }
+    return false;
 
+}
+console.log(ispalindrome(num));
+/**
+ if(var<0) return false;
+ const reversedString = val.split("").reverse().join();
+ if(string === reverstring) return true;
+
+ */
 
 //spread operator...
-const arr= [
-    {name:"hari",age:"10"},
-    {name:"shyam",age:"15"},
-    {name:"ram",age:"20"},
-];
-const obj= {
-    name:"a",
-    address:"b",
-    password:"c",
-    role:[],
-    isActive: false,
-};
-//donot do this
-//delet obj.password;
-const{password,roles, ...data} = obj;
-console.log({data});
+// const arr= [
+//     {name:"hari",age:"10"},
+//     {name:"shyam",age:"15"},
+//     {name:"ram",age:"20"},
+// ];
+// const obj= {
+//     name:"a",
+//     address:"b",
+//     password:"c",
+//     role:[],
+//     isActive: false,
+// };
+// //donot do this
+// //delet obj.password;
+// const{password,roles, ...data} = obj;
+// console.log({data});
 
-const[a, ...rest]=arr;
-consdole.log(rest);
+//const[a, ...rest]=arr;
+//consdole.log(rest);
+
+
 
 
